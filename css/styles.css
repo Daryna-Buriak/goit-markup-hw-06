@@ -111,6 +111,10 @@ address a:hover, address a:focus {
     background-color: #fff;
 }
 
+.values h3 {
+    line-height: 1.2;
+}
+
 .team {
     background-color: #f4f4fd;
 }
@@ -120,12 +124,28 @@ address a:hover, address a:focus {
     text-align: center;
 }
 
+.team-title {
+    line-height: 1.11;
+}
+
+.member-name {
+    line-height: 1.2;
+}
+
 .member-job {
     font-size: 16px;
 }
 
 .portfolio {
     background: #fff;
+}
+
+.portfolio-title {
+    line-height: 1.11
+}
+
+.feature-title {
+    line-height: 1.2
 }
 
 footer .web-logo {
