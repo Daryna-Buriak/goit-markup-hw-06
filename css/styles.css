@@ -22,6 +22,7 @@ h2 {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
 }
 
 h3 {
@@ -142,10 +143,6 @@ address a:hover, address a:focus {
 
 .portfolio {
     background: #fff;
-}
-
-.portfolio-title {
-    text-transform: capitalize;
 }
 
 .feature-title {
