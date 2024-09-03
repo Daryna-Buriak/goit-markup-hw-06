@@ -129,6 +129,7 @@ address a:hover, address a:focus {
 
 .team-title {
     line-height: 1.11;
+    text-transform: capitalize;
 }
 
 .member-name {
@@ -143,8 +144,12 @@ address a:hover, address a:focus {
     background: #fff;
 }
 
+.portfolio-title {
+    text-transform: capitalize;
+}
+
 .feature-title {
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 footer .web-logo {
