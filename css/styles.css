@@ -1,5 +1,10 @@
 * {
-    font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #434455;
+    background-color: #FFFFFF;
 }
 
 ul {
@@ -43,7 +48,7 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: #4d5ae5;
 }
 
 nav li a {
@@ -64,6 +69,7 @@ address a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal
 }
 
 address a:hover, address a:focus {
@@ -71,7 +77,7 @@ address a:hover, address a:focus {
 }
 
 .web-logo {
-    color: #4d5ae5;
+    color: #2e2f42;
 }
 
 .hero, footer {
@@ -92,7 +98,6 @@ address a:hover, address a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     color: #fff;
     cursor: pointer;
@@ -111,16 +116,19 @@ address a:hover, address a:focus {
 }
 
 .team-list li {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     text-align: center;
+}
+
+.member-job {
+    font-size: 16px;
 }
 
 .portfolio {
     background: #fff;
 }
 
-footer .logo {
+footer .web-logo {
     color: #f4f4fd;
 }
 
