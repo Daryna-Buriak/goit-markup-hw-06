@@ -2,17 +2,34 @@
    font-family: 'Roboto', sans-serif;
 }
 
+header {
+    width: 100%;
+}
+
 body {
     color: #434455;
     background-color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    padding: 100px 0;
 }
 
 ul {
     list-style-type: none;
+    margin: 0 0 0 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0 0;
 }
 
 h2 {
@@ -39,6 +56,33 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 0 0 0 0;
+}
+
+img {
+    display: block;
+}
+
+.container { 
+    max-width: 1158px;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-start;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
@@ -50,6 +94,15 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
+}
+
+nav .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 nav li a {
@@ -66,6 +119,15 @@ nav li a:hover, nav li a:focus {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 address a {
@@ -88,6 +150,11 @@ address a:hover, address a:focus {
     background-color: #2e2f42;
 }
 
+.hero {
+    margin: 0 auto;
+    padding: 188px 0;
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -95,9 +162,13 @@ address a:hover, address a:focus {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 48px auto;
 }
 
 .bttn-service {
+    display: block;
+    margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -105,6 +176,11 @@ address a:hover, address a:focus {
     background-color: #4d5ae5;
     color: #fff;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .bttn-service:hover, .bttn-service:focus {
@@ -113,14 +189,55 @@ address a:hover, address a:focus {
 
 .values {
     background-color: #fff;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .values h3 {
     line-height: 1.2;
 }
 
+.container .values-list {
+    display: flex;
+    gap: 24px;
+}
+
+.values-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.values-title {
+    margin-bottom: 8px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .team {
     background-color: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: calc((100% - 24) / 1);
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
 }
 
 .team-list li {
@@ -131,6 +248,14 @@ address a:hover, address a:focus {
 .team-title {
     line-height: 1.11;
     text-transform: capitalize;
+    padding-bottom: 72px;
+}
+
+.team-member .container{
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .member-name {
@@ -143,10 +268,51 @@ address a:hover, address a:focus {
 
 .portfolio {
     background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.potfolio-title {
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    width: calc((100% - 48) / 3);
+}
+
+.portfolio-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .feature-title {
     line-height: 1.2;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: flex-start;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 footer .web-logo {
@@ -155,4 +321,5 @@ footer .web-logo {
 
 footer p {
     color: #f4f4fd;
+    max-width: 264px;
 }
