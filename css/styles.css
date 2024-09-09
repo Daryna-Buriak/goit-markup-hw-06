@@ -284,7 +284,7 @@ address a:hover, address a:focus {
     row-gap: 48px;
 }
 
-portfolio-item {
+.portfolio-item {
     width: calc((100% - 48px) / 3);
 }
 
@@ -314,13 +314,9 @@ footer .container {
     padding: 0 15px;
 }
 
-footer .logo {
+.memo .logo {
     display: inline-block;
     margin-bottom: 16px;
-}
-
-footer a{
-    display: inline-block;
 }
 
 footer .web-logo {
