@@ -305,10 +305,6 @@ address a:hover, address a:focus {
 }
 
 footer .container {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    justify-content: flex-start;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
