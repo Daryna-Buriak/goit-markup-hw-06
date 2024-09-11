@@ -73,11 +73,9 @@ header {
 header .container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     justify-content: flex-start;
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .logo {
@@ -89,12 +87,12 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
 }
 
 nav {
     display: flex;
     align-items: center;
+    gap: 76px;
 }
 
 nav .navigation {
@@ -155,6 +153,16 @@ address a:hover, address a:focus {
 
 .hero {
     padding: 188px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 .hero-title {
@@ -165,12 +173,10 @@ address a:hover, address a:focus {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin: 48px auto;
 }
 
 .bttn-service {
     display: block;
-    margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -207,10 +213,9 @@ address a:hover, address a:focus {
 
 .values-item {
     width: calc((100% - 72px) / 4);
-}
-
-.values-title {
-    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .visually-hidden {
@@ -233,12 +238,18 @@ address a:hover, address a:focus {
     padding: 120px 0;
 }
 
+.team > .container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:72px;
+}
+
 .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     width: calc((100% - 24) / 1);
-    padding: 0px 0px 32px 0px;
 }
 
 .team-list li {
@@ -250,16 +261,17 @@ address a:hover, address a:focus {
 .team-title {
     line-height: 1.11;
     text-transform: capitalize;
-    margin-bottom: 72px;
 }
 
 .team-member .container{
     padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .member-name {
     line-height: 1.2;
-    margin-bottom: 8px;
 }
 
 .member-job {
@@ -273,8 +285,11 @@ address a:hover, address a:focus {
     padding: 120px 0;
 }
 
-.potfolio-title {
-    margin-bottom: 72px;
+.portfolio > .container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:72px;
 }
 
 .portfolio-list {
@@ -288,31 +303,37 @@ address a:hover, address a:focus {
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item img {
+    display: block;
+    width: 100%;
+  }
+
 .portfolio-app {
-    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     gap: 8px;
+    padding: 32px 16px;
 }
 
 .feature-title {
     line-height: 1.2;
-    margin-bottom: 8px;
 }
 
 footer .container {
     width: 1158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    gap: 16px;
 }
 
 footer .logo {
     display: inline-block;
-    margin-bottom: 16px;
 }
 
 footer .web-logo {
