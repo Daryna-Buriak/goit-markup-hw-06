@@ -91,10 +91,13 @@ header .container {
     color: #4d5ae5;
 }
 
+header .logo {
+    margin-right: 76px; 
+}
+
 nav {
     display: flex;
     align-items: center;
-    gap: 76px;
 }
 
 nav .navigation {
@@ -275,7 +278,8 @@ address a:hover, address a:focus {
 
 .portfolio {
     background: #fff;
-    padding: 120px;
+    padding-top: 120px; 
+    padding-bottom: 120px;
 }
 
 .potfolio-title {
