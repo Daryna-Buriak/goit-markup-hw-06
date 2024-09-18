@@ -68,7 +68,7 @@ img {
     margin: 0 auto;   
 }
 
-header {
+.header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.08);
 }
@@ -124,12 +124,12 @@ nav .navigation {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #404bbf;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item-studio:active::after{
+.nav-item-studio::after {
     position: absolute;
     left:0px;
     bottom:-1px;
@@ -178,6 +178,7 @@ address a:hover, address a:focus {
 }
 
 .hero {
+    max-width: 1440px;
     padding: 188px 0;
     display: flex;
     align-items: center;
@@ -187,6 +188,7 @@ address a:hover, address a:focus {
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero .container {
@@ -224,6 +226,7 @@ address a:hover, address a:focus {
 
 .bttn-service:hover, .bttn-service:focus {
     background-color: #404bbf;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .values {
@@ -242,6 +245,7 @@ address a:hover, address a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .values h3 {
@@ -296,15 +300,14 @@ address a:hover, address a:focus {
     gap: 24px;
 }
 
-.social-item div {
+.social-style {
     position: relative;
-    background-color: #4d5ae5;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
 
-.social-item div:hover {
+.social-icon:hover {
     background-color: #404bbf;
 }
 
@@ -313,6 +316,17 @@ address a:hover, address a:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-svg {
+    fill: #f4f4fd;
 }
 
 .team-list li {
@@ -325,6 +339,10 @@ address a:hover, address a:focus {
     line-height: 1.11;
     text-transform: capitalize;
     margin-bottom: 72px;
+}
+
+.team-member {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-member .container{
@@ -381,19 +399,15 @@ address a:hover, address a:focus {
     width: 100%;
     height: 100%;
     transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4d5ae5;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: auto;
+    padding: 40px 32px;
 }
-
 
 .portfolio-app {
     border: 1px solid #e7e9fc;
@@ -410,6 +424,7 @@ address a:hover, address a:focus {
 
 .portfolio-item:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-title {
@@ -420,24 +435,28 @@ address a:hover, address a:focus {
 .memo .container {
     display: flex;
     flex-direction: row;
-    gap: 120px;
+    align-items: baseline;
     width: 1158px;
 }
 
-footer .logo {
+.intro {
+    margin-right: 120px;
+}
+
+.footer-logo {
     margin-bottom: 16px;
 }
 
-footer .web-logo {
+.intro .web-logo {
     color: #f4f4fd;
 }
 
-footer p {
+.memo-text {
     color: #f4f4fd;
     max-width: 264px;
 }
 
-.memo h4{
+.footer-social {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -452,6 +471,6 @@ footer p {
     gap: 16px;
 }
 
-.memo .social-item div:hover {
+.memo .social-icon:hover {
     background-color: #31d0aa;
 }
