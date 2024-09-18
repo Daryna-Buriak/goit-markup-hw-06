@@ -307,7 +307,7 @@ address a:hover, address a:focus {
     border-radius: 50%;
 }
 
-.social-icon:hover {
+.social-icon:active, .social-icon:focus, .social-icon:hover {
     background-color: #404bbf;
 }
 
@@ -472,6 +472,6 @@ address a:hover, address a:focus {
     gap: 16px;
 }
 
-.memo .social-icon:hover {
+.memo .social-icon:hover, .memo .social-icon:focus, .memo .social-icon:active {
     background-color: #31d0aa;
 }
