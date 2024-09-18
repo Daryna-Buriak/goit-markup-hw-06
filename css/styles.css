@@ -78,7 +78,6 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     width: 1158px;
-
 }
 
 .logo {
@@ -189,6 +188,7 @@ address a:hover, address a:focus {
     background-position: left top;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0px auto;
 }
 
 .hero .container {
@@ -445,10 +445,6 @@ address a:hover, address a:focus {
     margin-right: 120px;
 }
 
-.intro .logo {
-    margin-bottom: 16px;
-}
-
 .intro .web-logo {
     color: #f4f4fd;
 }
@@ -456,6 +452,7 @@ address a:hover, address a:focus {
 .memo-text {
     color: #f4f4fd;
     max-width: 264px;
+    margin-top: 16px;
 }
 
 .footer-social {
