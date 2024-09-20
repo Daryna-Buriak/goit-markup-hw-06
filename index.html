@@ -221,6 +221,35 @@
         </section>
     </main>
 
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="close-link"><a class="modal-close" href="#"><svg width="8" height="8" class="cross-svg"><use href="./images/icons.svg#icon-cross"></use></svg></a></div>
+            <form class="modal-form">
+                <fieldset class="form-group">
+                    <legend class="modal-title">Leave your contacts and we will call you back</legend>
+                    <label class="form-field">Name
+                        <input type="text" name="username"/>
+                    </label>
+                    <label class="form-field">Phone
+                        <input type="tel" name="phone"/>
+                    </label>
+                    <label class="form-field">Email
+                        <input type="email" name="email"/>
+                    </label class="form-field">
+                    <label class="form-field">Comment
+                        <textarea name="comment" rows="5" placeholder="Text input"></textarea>
+                    </label>
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="terms" value="true" id="terms"/>
+                        <label class="form-label" for="terms" checked>I accept the terms and conditions of the <a href="#" class="policy-link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <input type="submit" class="modal-send" value="Send">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
     <footer class="memo">
         <div class="container">
             <div class="intro">
@@ -243,6 +272,11 @@
                         <a href="https://www.linkedin.com/" class="social-icon"><svg width="24" height="24" class="social-svg"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe">
+                <p>Subscribe</p>
+                <input type="email" name="email" placeholder="E-mail"/>
+                <a href="#">Subscribe<svg width="24" height="24" class="subscribe-svg"><use href="./images/icons.svg#icon-subscribe"></use></svg></a>
             </div>
         </div>
     </footer>
