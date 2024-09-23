@@ -563,6 +563,9 @@ input::placeholder {
 
 .modal {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
     background-color: #fcfcfc;
@@ -640,6 +643,9 @@ input::placeholder {
 
 .form-input:focus {
     border-color: #4D5AE5;
+}
+
+.form-input:focus + .form-svg {
     fill: #4D5AE5;
 }
 
@@ -677,7 +683,7 @@ input::placeholder {
     cursor: pointer;
 }
 
-.policy-icon:checked {
+.checkbox:checked + .form-label > .policy-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -690,7 +696,7 @@ input::placeholder {
     color: #8e8f99;
 }
 
-.policy-icon {
+.policy-checkbox {
     width: 16px;
     height: 16px; 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -704,6 +710,7 @@ input::placeholder {
 
 .policy-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .modal-send {
