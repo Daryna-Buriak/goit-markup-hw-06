@@ -617,6 +617,10 @@ input::placeholder {
     margin-bottom: 8px;
 }
 
+.form-comment-style {
+    margin-bottom: 16px;
+}
+
 .form-field{
     font-size: 12px;
     line-height: 1.17;
