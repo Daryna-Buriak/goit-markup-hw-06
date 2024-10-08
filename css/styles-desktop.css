@@ -3,10 +3,6 @@
         max-width: 1158px;   
     }
 
-    footer {
-        padding: 100px 0;
-    }
-
     header .container {
         width: 1158px;
         padding: 0 15px;
@@ -63,7 +59,6 @@
     }
 
     .values h3 {
-        margin-top: 8px;
         font-size: 20px;
         text-align: initial;
     }
@@ -91,12 +86,16 @@
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: baseline;
-        width: 1158px;
-        padding: 0 0;
+        max-width: 1158px;
+        padding: 0 16px;
     }
 
     .intro {
         margin-right: 120px;
+    }
+
+    .memo-text {
+        width: 264px;
     }
 
     .memo .logo {
