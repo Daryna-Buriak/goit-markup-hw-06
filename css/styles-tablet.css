@@ -104,7 +104,6 @@
 
     .hero {
         max-width: 768px;
-        max-width: 100%;
         padding: 112px 0;
         max-height: none;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/tab-people-office-bg.jpg');
